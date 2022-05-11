@@ -1,0 +1,11 @@
+<%- include("partials/header") %>
+<h1>Translacion:</h1>
+<form class="" action="/transformaciones/translacion/operacion" method="post">
+    <label for="translacionx">Valores de la translacion</label>
+    <input id="translacionx" class="form-control" required="true" type="number" step="any" name="translacionx" autocomplete="off" placeholder="Valor de x">
+    <input id="translaciony" class="form-control" required="true" type="number" step="any" name="translaciony" autocomplete="off" placeholder="Valor de y">
+    <input id="translacionz" class="form-control" required="true" type="number" step="any" name="translacionz" autocomplete="off" placeholder="Valor de z">
+    <button class="btn btn-primary" type="submit" name="button">Aceptar</button>
+  </form>
+  
+<%- include("partials/footer") %>

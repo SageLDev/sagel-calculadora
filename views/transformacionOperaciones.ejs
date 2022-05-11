@@ -1,0 +1,19 @@
+<%- include("partials/header") %>
+<h1>Operacion a realizar:</h1>
+<p>Punto: <%=transformacionPuntoX%>x + <%=transformacionPuntoY%>y + <%=transformacionPuntoZ%>z</p>
+<form class="form-matriz" action="/transformaciones/translacion" method="post">
+    <button class="btn btn-primary" type="submit" name="button">Translacion</button>
+</form>
+<form class="form-matriz" action="/transformaciones/escala" method="post">
+    <button class="btn btn-primary" type="submit" name="button">Escala</button>
+</form>
+<form class="form-matriz" action="/transformaciones/rotacionx" method="post">
+    <button class="btn btn-primary" type="submit" name="button">Rotacion En X</button>
+</form>
+<form class="form-matriz" action="/transformaciones/rotaciony" method="post">
+    <button class="btn btn-primary" type="submit" name="button">Rotacion En Y</button>
+</form>
+<form class="form-matriz" action="/transformaciones/rotacionz" method="post">
+    <button class="btn btn-primary" type="submit" name="button">Rotacion En Z</button>
+</form>
+<%- include("partials/footer") %>

@@ -1,0 +1,43 @@
+<%- include("partials/header") %>
+<table>
+    <tr>
+        <td>
+            <table class="matrix">
+                <tbody>
+                    <% for(let i = 0; i < afilas; i++){ %>
+                        <tr>
+                            <% for(let j = 0; j < acolumnas; j++){%>
+                                <td class="cell"><%=amatriz[i][j]%></td>
+                             <% } %>
+                        </tr>
+                    <% } %>
+                </tbody>
+            </table>
+        </td>
+        <td>
+            <table class="matrix">
+                <tbody>
+                    <% for(let i = 0; i < bfilas; i++){ %>
+                        <tr>
+                            <% for(let j = 0; j < bcolumnas; j++){%>
+                                <td class="cell"><%=bmatriz[i][j]%></td>
+                            <% } %>
+                        </tr>
+                    <% } %>
+                </tbody>
+            </table>
+        </td>
+
+    </tr>
+</table>
+
+<form class="form-matriz" action="/matrices/suma" method="post">
+    <button class="btn btn-primary" type="submit" name="button">Sumar</button>
+</form>
+<form class="form-matriz" action="/matrices/resta" method="post">
+    <button class="btn btn-primary" type="submit" name="button">Restar</button>
+</form>
+<form class="form-matriz" action="/matrices/multiplicacion" method="post">
+    <button class="btn btn-primary" type="submit" name="button">Multiplicar</button>
+</form>
+<%- include("partials/footer") %>

@@ -1,0 +1,11 @@
+<%- include("partials/header") %>
+<h1>Transformaciones:</h1>
+<form class="" action="/transformaciones" method="post">
+    <label for="transformacionPuntoX">Valores del punto</label>
+    <input id="transformacionPuntoX" class="form-control" required="true" type="number" step="any" name="transformacionPuntoX" autocomplete="off" placeholder="Valor de x">
+    <input id="transformacionPuntoY" class="form-control" required="true" type="number" step="any" name="transformacionPuntoY" autocomplete="off" placeholder="Valor de y">
+    <input id="transformacionPuntoZ" class="form-control" required="true" type="number" step="any" name="transformacionPuntoZ" autocomplete="off" placeholder="Valor de z">
+    <button class="btn btn-primary" type="submit" name="button">Aceptar</button>
+  </form>
+  
+<%- include("partials/footer") %>

@@ -1,0 +1,43 @@
+<%- include("partials/header") %>
+
+<h1>Introduce los datos de ambas matrices:</h1>
+
+
+<form class="form-matriz" action="/matrices/inputs" method="post">
+    <table>
+        <tr>
+            <td>
+                <table class="matrixTable">
+                    <tbody>
+                        <% for(let i = 0; i < afilas; i++){ %>
+                            <tr>
+                                <% for(let j = 0; j < acolumnas; j++){%>
+                                    <td><input type="number" name="<%= 'a' + i + j%>" required="true" step="any"></td>
+                                 <% } %>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+            </td>
+            <td>
+                <table class="matrixTable">
+                    <tbody>
+                        <% for(let i = 0; i < bfilas; i++){ %>
+                            <tr>
+                                <% for(let j = 0; j < bcolumnas; j++){%>
+                                    <td><input type="number" name="<%= 'b' + i + j%>" required="true" step="any"></td>
+                                 <% } %>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <button class="btn btn-primary" type="submit" name="button">Aceptar</button>
+</form>
+
+
+
+
+<%- include("partials/footer") %>

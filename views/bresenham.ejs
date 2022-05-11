@@ -1,0 +1,12 @@
+<%- include("partials/header") %>
+
+<form class="" action="/bresenham" method="post">
+    <label for="puntoInicialX">Valores del punto inicial:</label>
+    <input id="puntoInicialX" class="form-control" required="true" type="number" name="puntoInicialX" step="any" autocomplete="off" placeholder="Valor de X">
+    <input id="puntoInicialY" class="form-control" required="true" type="number" name="puntoInicialY" step="any"  autocomplete="off" placeholder="Valor de Y">
+    <label for="puntoFinalX">Valores del punto final:</label>
+    <input id="puntoFinalX" class="form-control" required="true" type="number" name="puntoFinalX" step="any" autocomplete="off" placeholder="Valor de X">
+    <input id="puntoFinalY" class="form-control" required="true" type="number" name="puntoFinalY" step="any" autocomplete="off" placeholder="Valor de Y">
+    <button class="btn btn-primary" type="submit" name="button">Aceptar</button>
+  </form>
+<%- include("partials/footer") %>

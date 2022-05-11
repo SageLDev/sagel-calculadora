@@ -1,0 +1,47 @@
+<%- include("partials/header") %>
+<h1>Resta de matrices:</h1>
+<table>
+    <tr>
+        <td>
+            <table class="matrix">
+                <tbody>
+                    <% for(let i = 0; i < afilas; i++){ %>
+                        <tr>
+                            <% for(let j = 0; j < acolumnas; j++){%>
+                                <td class="cell"><%=amatriz[i][j]%></td>
+                             <% } %>
+                        </tr>
+                    <% } %>
+                </tbody>
+            </table>
+        </td>
+        <td><p>-</p></td>
+        <td>
+            <table class="matrix">
+                <tbody>
+                    <% for(let i = 0; i < bfilas; i++){ %>
+                        <tr>
+                            <% for(let j = 0; j < bcolumnas; j++){%>
+                                <td class="cell"><%=bmatriz[i][j]%></td>
+                            <% } %>
+                        </tr>
+                    <% } %>
+                </tbody>
+            </table>
+        </td>
+
+    </tr>
+</table>
+<h1>Matriz Resultante: </h1>
+<table class="matrix">
+    <tbody>
+        <% for(let i = 0; i < afilas; i++){ %>
+            <tr>
+                <% for(let j = 0; j < acolumnas; j++){%>
+                    <td class="cell"><%=matrizresultado[i][j]%></td>
+                 <% } %>
+            </tr>
+        <% } %>
+    </tbody>
+</table>
+<%- include("partials/footer") %>

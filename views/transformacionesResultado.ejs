@@ -1,0 +1,16 @@
+<%- include("partials/header") %>
+
+<h1>Punto resultante:</h1>
+<table class="matrix">
+    <tbody>
+        <% for(let i = 0; i < 3; i++){ %>
+            <tr>
+                <% for(let j = 0; j < 1; j++){%>
+                    <td class="cell"><%=transformacionMatrizResultado[i][j]%></td>
+                 <% } %>
+            </tr>
+        <% } %>
+    </tbody>
+</table>
+
+<%- include("partials/footer") %>

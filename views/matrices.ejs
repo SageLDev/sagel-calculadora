@@ -1,0 +1,12 @@
+<%- include("partials/header") %>
+
+<form class="" action="/matrices" method="post">
+    <label for="afilas">Dimesiones de la primera matriz:</label>
+    <input id="afilas" class="form-control" required="true" type="number" min="0" name="afilas" autocomplete="off" placeholder="Filas">
+    <input id="columnas" class="form-control" required="true" type="number" min="0" name="acolumnas" autocomplete="off" placeholder="Columnas">
+    <label for="bfilas">Dimesiones de la segunda matriz:</label>
+    <input id="bfilas" class="form-control" required="true" type="number" min="0" name="bfilas" autocomplete="off" placeholder="Filas">
+    <input id="bcolumnas" class="form-control" required="true" type="number" min="0" name="bcolumnas" autocomplete="off" placeholder="Columnas">
+    <button class="btn btn-primary" type="submit" name="button">Aceptar</button>
+  </form>
+<%- include("partials/footer") %>

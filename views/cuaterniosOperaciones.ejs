@@ -1,0 +1,14 @@
+<%- include("partials/header") %>
+<h1>Operacion a realizar:</h1>
+<p>Cuaternio 1: <%=cuaternios1r%> + <%=cuaternios1i%>i + <%=cuaternios1j%>j + <%=cuaternios1k%>k</p>
+<p>Cuaternio 2: <%=cuaternios2r%> + <%=cuaternios2i%>i + <%=cuaternios2j%>j + <%=cuaternios2k%>k</p>
+<form class="form-matriz" action="/cuaternios/multiplicacion" method="post">
+    <button class="btn btn-primary" type="submit" name="button">Multiplicacion</button>
+</form>
+<form class="form-matriz" action="/cuaternios/suma" method="post">
+    <button class="btn btn-primary" type="submit" name="button">Suma</button>
+</form>
+<form class="form-matriz" action="/cuaternios/resta" method="post">
+    <button class="btn btn-primary" type="submit" name="button">Resta</button>
+</form>
+<%- include("partials/footer") %>

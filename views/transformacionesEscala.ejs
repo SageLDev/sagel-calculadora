@@ -1,0 +1,11 @@
+<%- include("partials/header") %>
+<h1>Escala:</h1>
+<form class="" action="/transformaciones/escala/operacion" method="post">
+    <label for="escalax">Valores de la translacion</label>
+    <input id="escalax" class="form-control" required="true" type="number" step="any" name="escalax" autocomplete="off" placeholder="Valor de x">
+    <input id="escalay" class="form-control" required="true" type="number" step="any" name="escalay" autocomplete="off" placeholder="Valor de y">
+    <input id="escalaz" class="form-control" required="true" type="number" step="any" name="escalaz" autocomplete="off" placeholder="Valor de z">
+    <button class="btn btn-primary" type="submit" name="button">Aceptar</button>
+  </form>
+  
+<%- include("partials/footer") %>

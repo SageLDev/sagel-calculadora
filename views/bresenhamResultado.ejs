@@ -1,0 +1,17 @@
+<%- include("partials/header") %>
+<h1>Punto Inicial:</h1>
+<p><%=valorInicialX%>x, <%=valorInicialY%>y</p>
+<h1>Punto Final:</h1>
+<p><%=valorFinalX%>x, <%=valorFinalY%>y</p>
+<h1>Trayectoria:</h1>
+<table class="matrix">
+    <tbody>
+        <% for(let i = 0; i < nuevoPuntoArrayX.length; i++){ %>
+            <tr>
+                <td class="cell"><%=nuevoPuntoArrayX[i]%></td>
+                <td class="cell"><%=nuevoPuntoArrayY[i]%></td>
+            </tr>
+        <% } %>
+    </tbody>
+</table>
+<%- include("partials/footer") %>
